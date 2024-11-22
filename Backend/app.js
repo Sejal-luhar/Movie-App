@@ -33,7 +33,7 @@ app.use(session({
 }));
 
 app.use(cors({
-  origin: 'http://localhost:5173', // Frontend URL
+  origin: process.env.FRONTENDURL, // Frontend URL
   credentials: true, // Allow cookies for session management
 }));
 
