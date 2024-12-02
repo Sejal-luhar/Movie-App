@@ -33,7 +33,7 @@ app.use(session({
 }));
 
 app.use(cors({
-  origin: 'https://movie-app-xqnk.vercel.app', // Frontend URL
+  origin: process.env.FRONTENDURL, // Frontend URL
   credentials: true, // Allow cookies for session management
 }));
 
